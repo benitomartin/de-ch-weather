@@ -1,0 +1,154 @@
+version: 2
+
+sources:
+  - name: production
+    database: active-411914
+    schema: weather
+
+    
+    tables:
+      - name: cities
+
+
+models:
+  - name: prod_all_cities
+    description: ""
+    columns:
+      - name: city
+        data_type: string
+        description: ""
+        tests:
+          - dbt_utils.not_empty_string
+
+      - name: lat
+        data_type: float64
+        description: ""
+        tests:
+          - not_null:
+              severity: warn
+
+      - name: lon
+        data_type: float64
+        description: ""
+        tests:
+          - not_null:
+              severity: warn
+
+      - name: category
+        data_type: string
+        description: ""
+
+      - name: warnings
+        data_type: string
+        description: ""
+
+      - name: aqi
+        data_type: int64
+        description: ""
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+
+      - name: co_concentration
+        data_type: float64
+        description: ""
+
+      - name: no2_concentration
+        data_type: float64
+        description: ""
+
+      - name: o3_concentration
+        data_type: float64
+        description: ""
+
+      - name: pm10_concentration
+        data_type: float64
+        description: ""
+
+      - name: pm25_concentration
+        data_type: float64
+        description: ""
+
+      - name: so2_concentration
+        data_type: float64
+        description: ""
+
+      - name: day
+        data_type: timestamp
+        description: ""
+
+      - name: time
+        data_type: time
+        description: ""
+
+  - name: prod_one_city
+    description: ""
+    columns:
+      - name: city
+        data_type: string
+        description: ""
+        tests:
+          - dbt_utils.not_empty_string  
+
+      - name: lat
+        data_type: float64
+        description: ""
+        tests:
+          - not_null:
+              severity: warn
+
+      - name: lon
+        data_type: float64
+        description: ""
+        tests:
+          - not_null:
+              severity: warn
+
+      - name: category
+        data_type: string
+        description: ""
+
+      - name: warnings
+        data_type: string
+        description: ""
+
+      - name: aqi
+        data_type: int64
+        description: ""
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+
+      - name: co_concentration
+        data_type: float64
+        description: ""
+
+      - name: no2_concentration
+        data_type: float64
+        description: ""
+
+      - name: o3_concentration
+        data_type: float64
+        description: ""
+
+      - name: pm10_concentration
+        data_type: float64
+        description: ""
+
+      - name: pm25_concentration
+        data_type: float64
+        description: ""
+
+      - name: so2_concentration
+        data_type: float64
+        description: ""
+
+      - name: day
+        data_type: timestamp
+        description: ""
+
+      - name: time
+        data_type: time
+        description: ""
