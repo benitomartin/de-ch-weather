@@ -35,10 +35,10 @@ select
 
 from weather_ch
 
--- dbt build --select <model_name> --vars {'is_test_run: false'}
-{% if var('is_test_run', default=true) %}
+-- -- dbt build --select <model_name> --vars {'is_test_run: false'}
+-- {% if var('is_test_run', default=true) %}
 
-    -- Limit the result to 100 rows
-    limit 100
+--     -- Limit the result to 100 rows
+--     limit 100
 
-{% endif %}
+-- {% endif %}
