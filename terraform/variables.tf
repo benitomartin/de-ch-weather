@@ -23,12 +23,17 @@ variable "location" {
 
 variable "bq_dataset_name" {
   description = "BigQuery Dataset"
-  default     = "example_dataset" # Default BigQuery dataset name is 'hotels_all'
+  # default     = "example_dataset" # Default BigQuery dataset name is 'hotels_all'
+  # default     = "weather_data" # Default BigQuery dataset name is 'hotels_all'
+  default     = "weather" # Default BigQuery dataset name is 'hotels_all'
+
 }
 
 variable "gcs_bucket_name" {
   description = "The name of the GC Storage Bucket."
-  default     = "active-411914-terraform-bucket" # Default storage class is 'STANDARD'
+  # default     = "active-411914-terraform-bucket" # Default storage class is 'STANDARD'
+  default     = "mage-zoomcamp-ben" # Default storage class is 'STANDARD'
+
 }
 
 variable "gcs_storage_class" {
