@@ -1,1 +1,1 @@
-{"dateTime": "str", "aqi": "float64", "category": "str", "dominantPollutant": "str", "displayName": "str", "fullName": "str", "concentration_value": "float64", "city": "str", "latitude": "float64", "longitude": "float64"}
+{"dateTime": "str", "aqi": "int64", "category": "str", "dominantPollutant": "str", "displayName": "str", "fullName": "str", "concentration_value": "float64", "city": "str", "latitude": "float64", "longitude": "float64"}

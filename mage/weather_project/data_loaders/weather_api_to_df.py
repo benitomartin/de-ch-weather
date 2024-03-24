@@ -142,9 +142,9 @@ def load_data_from_api(*args, **kwargs):
     # List of cities
     cities = [
               "Zurich",
-        #       "Geneva", 
-        #   "Bern", "Basel", "Lucerne", "Lausanne", "St. Gallen", "Locarno",
-        #   "Davos", "Interlaken", "Zermatt", "Andermatt", "Neuchatel", "Schaffhausen"
+               "Geneva", 
+            "Bern", "Basel", "Lucerne", "Lausanne", "St. Gallen", "Locarno",
+           "Davos", "Interlaken", "Zermatt", "Andermatt", "Neuchatel", "Schaffhausen"
             ]
 
 
