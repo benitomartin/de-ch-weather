@@ -39,7 +39,7 @@ The project has been structured with the following folders and files:
 
 * `mage:` Workflow orchestration pipeline
 * `dbt:` Data transformation and CI/CD pipeline using dbt
-* `looker:` Reports from Looker Studio
+* `looker:` Report from Looker Studio
 * `terraform:` IaC stream-based pipeline infrastructure in GCP using Terraform
 * `requirements.txt:` Project requirements
 * `images:` Printouts of results
