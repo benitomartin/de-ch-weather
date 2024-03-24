@@ -80,3 +80,18 @@ Once the data are in BigQuery a complete transformation step is performed using 
 <p align="center">
     <img src="/images/dbt.png"/>
 </p>
+
+## Visualization
+
+
+<p align="center">
+    <img src="/images/air7days.png"/>
+</p>
+
+<p align="center">
+    <img src="/images/aqi7days.png"/>
+</p>
+
+<p align="center">
+    <img src="/images/aqitoday.png"/>
+</p>
