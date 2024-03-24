@@ -58,5 +58,13 @@ The dataset was obtained from [Google Air Quality API](https://developers.google
 Afterwards, the final clean data are ingested to a GCP Bucket and Big Query. Finally, transformations are perfomed using **dbt** (see [dbt](./dbt) folder) to get the production ready data for dashboarding wsing **Looker**.
 
 
+
 <h3 align="center"><i>Mage Data Ingestion</i></h3>
 &nbsp;
+
+The following picture shows two pipelines used to send the data to the google cloud bucket. It can be sent either directly to the bucket or to a partitioned folder inside the bucket containing the year/month/day structure. This is the approach taken so that the file can be updated on a daily basis and the data from prevous days are kept
+
+<p>
+    <img src="/images/weather_to_gcs_parquet.png"/>
+</p>
+
