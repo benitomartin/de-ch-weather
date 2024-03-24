@@ -1,0 +1,4 @@
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "harmonic_bard"}, "timestamp": 1710684768, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "endless_scholar"}, "timestamp": 1710684978, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "api_to_gcs_copy"}, "timestamp": 1710688885, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "genuine_fire"}, "timestamp": 1710689643, "user": null}

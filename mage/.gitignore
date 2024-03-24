@@ -167,7 +167,7 @@ node_modules
 
 # Scratch files
 scratch*
-/mage_data*
+# /mage_data*
 *secrets*.json
-weather_project
+# weather_project
 gcs-mage-key.json

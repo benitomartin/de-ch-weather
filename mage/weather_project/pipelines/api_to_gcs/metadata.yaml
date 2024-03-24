@@ -1,0 +1,108 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - df_transform
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: weather_api_to_df
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: weather_api_to_df
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - df_pivot
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: df_transform
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - weather_api_to_df
+  uuid: df_transform
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - df_to_gcs_parquet
+  - df_to_gcs_partition_parquet
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: df_pivot
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - df_transform
+  uuid: df_pivot
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: df_to_gcs_partition_parquet
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - df_pivot
+  uuid: df_to_gcs_partition_parquet
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: df_to_gcs_parquet
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - df_pivot
+  uuid: df_to_gcs_parquet
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-03-17 14:16:17.666707+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: api_to_gcs
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: api_to_gcs
+variables_dir: /home/src/mage_data/weather_project
+widgets: []
