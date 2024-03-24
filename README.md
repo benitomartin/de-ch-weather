@@ -47,7 +47,7 @@ The project has been structured with the following folders and files:
 
 ## Project Description
 
-The dataset was obtained from [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality) and contains various columns with air quality data. To prepare the data some preprocessing steps were conducted. The following actions were performed using **Mage** to get a clean dataset. This [Medium] (https://medium.com/towards-data-science/a-python-tool-for-fetching-air-pollution-data-from-google-maps-air-quality-apis-7cf58a7c63cb) article was taken as reference to understand the API so a big shotout to [Robert Martin-Short](https://github.com/rmartinshort)
+The dataset was obtained from [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality) and contains various columns with air quality data. To prepare the data some preprocessing steps were conducted. The following actions were performed using **Mage** to get a clean dataset. This [Medium](https://medium.com/towards-data-science/a-python-tool-for-fetching-air-pollution-data-from-google-maps-air-quality-apis-7cf58a7c63cb) article was taken as reference to understand the API so a big shotout to [Robert Martin-Short](https://github.com/rmartinshort)
 
 * Extract the relevant pollutants and air quality index (AQI) from the API
 * Create the columns with the selected cities, latitude and longitude
