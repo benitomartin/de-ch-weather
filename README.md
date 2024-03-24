@@ -72,7 +72,7 @@ The following picture shows two pipelines used to send the data to the google cl
     <img src="/images/gcs_to_bq.png"/>
 </p>
 
-<h3 align="center"><i>dbt Data Ingestion</i></h3>
+<h3 align="center"><i>dbt Data Transformation</i></h3>
 &nbsp;
 
 Once the data are in BigQuery a complete transformation step is performed using **dbt** in order to have the final clean dataset again in BigQuery. There are 4 dataset generated with dbt, two staging and two production, each having the air quality data from all cities and from one city, that can be changed in dbt accordingly. The dataset called `prod_all_cities` is the one taken for the dashboard visualization in Looker.
