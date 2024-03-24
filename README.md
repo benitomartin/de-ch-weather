@@ -47,7 +47,7 @@ The project has been structured with the following folders and files:
 
 ## Project Description
 
-The dataset was obtained from [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality) and contains various columns with air quality data. To prepare the data some preprocessing steps were conducted. The following actions were performed using **Mage** to get a clean data set:
+The dataset was obtained from [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality) and contains various columns with air quality data. To prepare the data some preprocessing steps were conducted. The following actions were performed using **Mage** to get a clean dataset:
 
 * Extract the relevant pollutants and air quality index (AQI) from the API
 * Create the columns with the selected cities, latitude and longitude
@@ -62,7 +62,7 @@ Afterwards, the final clean data are ingested to a GCP Bucket and Big Query. Fin
 <h3 align="center"><i>Mage Data Ingestion</i></h3>
 &nbsp;
 
-The following picture shows two pipelines used to send the data to the google cloud bucket. It can be sent either directly to the bucket or to a partitioned folder inside the bucket containing the year/month/day structure. The last one is the approach taken so that the file can be updated on a daily basis and the data from prevous days are kept.
+The following picture shows two pipelines used to send the data to the google cloud bucket. It can be sent either directly to the bucket or to a partitioned folder inside the bucket containing the year/month/day structure. The last one is the approach taken so that the file can be updated on a daily basis and the data from prevous days are kept. Finally the data are sent from the bucket to BigQuery.
 
 <p>
     <img src="/images/weather_to_gcs_parquet.png"/>
@@ -70,4 +70,13 @@ The following picture shows two pipelines used to send the data to the google cl
 
 <p align="center">
     <img src="/images/gcs_to_bq.png"/>
+</p>
+
+<h3 align="center"><i>dbt Data Ingestion</i></h3>
+&nbsp;
+
+Once the data are in BigQuery a complete transformation step is performed using **dbt** in order to have the final clean dataset again in BigQuery. There are 4 dataset generated with dbt, two staging and two production, each having the air quality data from all cities and from one city, that can be changed in dbt accordingly.
+
+<p align="center">
+    <img src="/images/dbt.png"/>
 </p>
