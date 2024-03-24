@@ -37,32 +37,31 @@ Below, you can find some instructions to understand the project content. Feel fr
 
 The project has been structured with the following folders and files:
 
-* `mage:` workflow orchestration pipeline
-* `dbt:` data transformation and CI/CD pipeline using dbt
-* `looker:` reports from looker studio
+* `mage:` Workflow orchestration pipeline
+* `dbt:` Data transformation and CI/CD pipeline using dbt
+* `looker:` Reports from Looker Studio
 * `terraform:` IaC stream-based pipeline infrastructure in GCP using Terraform
-* `requirements.txt:` project requirements
-* `images:` printouts of results
+* `requirements.txt:` Project requirements
+* `images:` Printouts of results
 
 
 ## Project Description
 
-The dataset was obtained from [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality) and contains various columns with air quality data. To prepare the data some preprocessing steps were conducted. The following actions were performed using **Mage** to get a clean dataset. This [Medium](https://medium.com/towards-data-science/a-python-tool-for-fetching-air-pollution-data-from-google-maps-air-quality-apis-7cf58a7c63cb) article was taken as reference to understand the API and extract the data so a big shotout to [Robert Martin-Short](https://github.com/rmartinshort) for the tutorial.
+The dataset was obtained from [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality) and contains various columns with air quality data. To prepare the data some preprocessing steps were conducted. The following actions were performed using **Mage** to get a clean dataset. This [Medium](https://medium.com/towards-data-science/a-python-tool-for-fetching-air-pollution-data-from-google-maps-air-quality-apis-7cf58a7c63cb) article was used as reference to understand the API and extract the data. A big shotout to [Robert Martin-Short](https://github.com/rmartinshort) for the tutorial.
 
 * Extract the relevant pollutants and air quality index (AQI) from the API
-* Create the columns with the selected cities, latitude and longitude
-* Remove rows with NaN
+* Create the columns with the selected cities, latitude, and longitude
+* Remove rows with NaN values
 * Remove duplicates
-* Create a new column with the country name
 
-Afterwards, the final clean data are ingested to a GCP Bucket and Big Query. Finally, transformations are perfomed using **dbt** (see [dbt](./dbt) folder) to get the production ready data for dashboarding wsing **Looker**.
+Afterward, the final clean data are ingested to a GCP Bucket and Big Query. Finally, transformations are perfomed using **dbt** (see [dbt](./dbt) folder) to get the production-ready data for dashboarding wsing **Looker**.
 
 
 
 <h3 align="center"><i>Mage Data Ingestion</i></h3>
 &nbsp;
 
-The following picture shows two pipelines used to send the data to the google cloud bucket. It can be sent either directly to the bucket or to a partitioned folder inside the bucket containing the year/month/day structure. The last one is the approach taken so that the file can be updated on a daily basis and the data from prevous days are kept. Finally the data are sent from the bucket to BigQuery.
+The following picture shows two pipelines used to send the data to the Google Cloud bucket. It can be sent either directly to the bucket or to a partitioned folder inside the bucket containing the year/month/day structure. The latter approach is taken so that the file can be updated on a daily basis and the data from previous days are kept. Finally, the data is sent from the bucket to BigQuery.
 
 <p>
     <img src="/images/weather_to_gcs_parquet.png"/>
@@ -75,7 +74,7 @@ The following picture shows two pipelines used to send the data to the google cl
 <h3 align="center"><i>dbt Data Transformation</i></h3>
 &nbsp;
 
-Once the data are in BigQuery a complete transformation step is performed using **dbt** in order to have the final clean dataset again in BigQuery. There are 4 dataset generated with dbt, two staging and two production, each having the air quality data from all cities and from one city, that can be changed in dbt accordingly. The dataset called `prod_all_cities` is the one taken for the dashboard visualization in Looker. For the deployment in Github a CI/CD Check was run in dbt with the command `dbt build --select state:modified+`
+Once the data is in BigQuery, a complete transformation step is performed using **dbt** to have the final clean dataset again in BigQuery. Four datasets are generated with dbt, two staging, and two production, each having the air quality data from all cities and from one city, which can be changed in dbt accordingly. The dataset called `prod_all_cities` is the one taken for the dashboard visualization in Looker. For the deployment in Github a CI/CD Check was run in dbt with the command `dbt build --select state:modified+`
 
 <p align="center">
     <img src="/images/dbt.png"/>
