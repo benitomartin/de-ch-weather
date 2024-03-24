@@ -56,3 +56,7 @@ The dataset was obtained from [Google Air Quality API](https://developers.google
 * Create a new column with the country name
 
 Afterwards, the final clean data are ingested to a GCP Bucket and Big Query. Finally, transformations are perfomed using **dbt** (see [dbt](./dbt) folder) to get the production ready data for dashboarding wsing **Looker**.
+
+
+<h3 align="center"><i>Mage Data Ingestion</i></h3>
+&nbsp;
