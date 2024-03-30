@@ -20,7 +20,7 @@ Then follow the next steps:
     terraform init
     ```
 
-- Plan and apply Terraform adding the absolute path:
+- Plan and apply Terraform:
 
     ```bash
     terraform plan 
