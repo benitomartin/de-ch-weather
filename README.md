@@ -112,7 +112,7 @@ Finally, to streamline the development process, a fully automated **Build** and 
 
 ## Project Set Up
 
-The Python version used for this project is Python 3.9.
+The Python version used for this project is Python 3.10.
 
 1. Clone the repo (or download it as zip):
 
@@ -120,7 +120,7 @@ The Python version used for this project is Python 3.9.
    git clone https://github.com/benitomartin/de-ch-weather.git
    ```
 
-2. Create the virtual environment named `main-env` using Conda with Python version 3.9:
+2. Create the virtual environment named `main-env` using Conda with Python version 3.10:
 
    ```bash
    conda create -n main-env python=3.10
