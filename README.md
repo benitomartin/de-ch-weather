@@ -54,7 +54,7 @@ The dataset was obtained from [Google Air Quality API](https://developers.google
 * Remove rows with NaN values
 * Remove duplicates
 
-Afterward, the final clean data are ingested to a GCP Bucket and Big Query. Finally, transformations are perfomed using **dbt** (see [dbt](./dbt) folder) to get the production-ready data for dashboarding wsing **Looker**.
+Afterward, the final clean data are ingested to a GCP Bucket and Big Query. Finally, transformations are perfomed using **dbt** (see [dbt](./dbt) folder) to get the production-ready data for dashboarding using **Looker**.
 
 
 
