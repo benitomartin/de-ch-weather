@@ -95,6 +95,13 @@ Once the data is in BigQuery, a complete transformation step is performed using 
 
 Finally, to streamline the development process, a fully automated **Build** and **CI/CD** pipeline was created using dbt:
 
+<h3 align="center"><i>dbt Build</i></h3>
+&nbsp;
+
+<p align="center">
+<img src="/images/dbt2.png" height="300">
+</p>
+
 <h3 align="center"><i>dbt CI/CD</i></h3>
 &nbsp;
 
@@ -102,12 +109,6 @@ Finally, to streamline the development process, a fully automated **Build** and 
     <img src="/images/dbt.png"/>
 </p>
 
-<h3 align="center"><i>dbt CI/CD</i></h3>
-&nbsp;
-
-<p>
-    <img src="/images/dbt2.png"/>
-</p>
 
 ## Project Set Up
 
@@ -144,3 +145,15 @@ Each project folder contains a **README.md** file with instructions about how to
 * BigQuery Data Editor
 * BigQuery Job User
 * BigQuery User
+
+## Project Best Practices
+
+The following best practices were implemented:
+
+- :white_check_mark: **Problem description**: The project is well described and it's clear and understandable
+- :white_check_mark: **Cloud**: The project is developed on the cloud (Google) and IaC tools (Terraform) are used for provisioning the infrastructure
+- :white_check_mark: **Data Ingestion**: Fully deployed workflow orchestration using mage
+- :white_check_mark: **Data warehouse**: Tables are created in BigQuery
+- :white_check_mark: **Transformations**: Tables are transformed using dbt
+- :white_check_mark: **Dashboard**: 3 Pages with 6 visualizations using Looker
+- :white_check_mark: **Reproducibility**: Instructions are clear, it's easy to run the code, and it works. 
