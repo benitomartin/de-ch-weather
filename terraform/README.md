@@ -14,7 +14,7 @@ The `variables.tf` file contains the following variable that must be defined to 
 
 Then follow the next steps:
 
-- Initialize Terraform and apply the configuration:
+- Initialize Terraform:
 
     ```bash
     terraform init
