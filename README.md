@@ -99,15 +99,9 @@ Finally, to streamline the development process, a fully automated **CI/CD** pipe
 &nbsp;
 
 <p>
-    <img src="/images/dbt build production.png"/>
+    <img src="/images/dbt.png"/>
 </p>
 
-<h3 align="center"><i>GitHub Actions CI/CD</i></h3>
-&nbsp;
-
-<p>
-    <img src="/images/CICD Github.png"/>
-</p>
 
 ## Project Set Up
 
