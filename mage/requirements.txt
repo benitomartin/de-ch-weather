@@ -1,5 +1,3 @@
 geopy
-matplotlib
 ipykernel
-seaborn
 python-dotenv
