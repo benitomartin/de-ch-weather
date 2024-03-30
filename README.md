@@ -6,7 +6,7 @@
 
 This project has been developed as part of the [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) course provided by [DataTalks.Club](https://datatalks.club/). The data used has been extracted from the [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality).
 
-Below, you can find some instructions to understand the project content. Feel free to clone this repo :wink:
+Below, you can find the project descrition to understand the content and setup instructions. Feel free to ⭐ and clone this repo 😉
 
 ## Tech Stack
 
