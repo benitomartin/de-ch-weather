@@ -102,6 +102,12 @@ Finally, to streamline the development process, a fully automated **Build** and 
     <img src="/images/dbt.png"/>
 </p>
 
+<h3 align="center"><i>dbt CI/CD</i></h3>
+&nbsp;
+
+<p>
+    <img src="/images/dbt2.png"/>
+</p>
 
 ## Project Set Up
 
@@ -125,9 +131,6 @@ The Python version used for this project is Python 3.9.
     ```bash
     pip install -r requirements.txt
 
-    or
-
-    make install
     ```
 
 4. Install terraform:
