@@ -151,7 +151,7 @@ Each project folder contains a **README.md** file with instructions about how to
 
 ## Evaluation Criteria
 
-The following best practices were implemented:
+The following criteria for the evaluation have been fulfilled:
 
 - :white_check_mark: **Problem description**: The project is well described and it's clear and understandable
 - :white_check_mark: **Cloud**: The project is developed on the cloud (Google) and IaC tools (Terraform) are used for provisioning the infrastructure
