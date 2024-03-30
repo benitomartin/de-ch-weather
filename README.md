@@ -137,7 +137,7 @@ The Python version used for this project is Python 3.9.
 4. Install terraform:
 
    ```bash
-    conda install -c conda-forge terraform
+   conda install -c conda-forge terraform
     ```
 
 Each project folder contains a **README.md** file with instructions about how to run the code. I highly recommend creating a virtual environment for each one. Additionally, please note that a **GCP Account**, credentials, and proper **IAM** roles are necessary for the scripts to function correctly. The following IAM Roles have been used for this project:
