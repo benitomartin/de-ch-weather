@@ -145,6 +145,9 @@ Each project folder contains a **README.md** file with instructions about how to
 * BigQuery Data Editor
 * BigQuery Job User
 * BigQuery User
+* BigQuery Admin
+* Storage Admin
+* Compute Admin
 
 ## Evaluation Criteria
 
