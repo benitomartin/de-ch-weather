@@ -146,7 +146,7 @@ Each project folder contains a **README.md** file with instructions about how to
 * BigQuery Job User
 * BigQuery User
 
-## Project Best Practices
+## Evaluation Criteria
 
 The following best practices were implemented:
 
