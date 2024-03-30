@@ -93,7 +93,7 @@ Once the data is in BigQuery, a complete transformation step is performed using 
 
 ## CI/CD
 
-Finally, to streamline the development process, a fully automated **CI/CD** pipeline was created using GitHub Actions and dbt as well:
+Finally, to streamline the development process, a fully automated **Build** and **CI/CD** pipeline was created using dbt:
 
 <h3 align="center"><i>dbt CI/CD</i></h3>
 &nbsp;
@@ -138,17 +138,6 @@ The Python version used for this project is Python 3.9.
 
 Each project folder contains a **README.md** file with instructions about how to run the code. I highly recommend creating a virtual environment for each one. Additionally, please note that a **GCP Account**, credentials, and proper **IAM** roles are necessary for the scripts to function correctly. The following IAM Roles have been used for this project:
 
-* BigQuery Admin
 * BigQuery Data Editor
 * BigQuery Job User
 * BigQuery User
-* Dataproc Administrator
-* Storage Admin
-* Storage Object Admin
-* Storage Object Creator
-* Storage Object Viewer
-* Viewer
-
-<p align="center">
-    <img src="/images/aqitoday.png"/>
-</p>
