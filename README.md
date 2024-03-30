@@ -1,4 +1,4 @@
-# Siwss Air Quality Index
+# Swiss Air Quality Index
 
 <p align="center">
 <img align="center" src="/images/airquality.png" height="500">
