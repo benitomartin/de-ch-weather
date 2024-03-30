@@ -91,6 +91,70 @@ Once the data is in BigQuery, a complete transformation step is performed using 
     <img src="/images/aqi7days.png"/>
 </p>
 
+## CI/CD
+
+Finally, to streamline the development process, a fully automated **CI/CD** pipeline was created using GitHub Actions and dbt as well:
+
+<h3 align="center"><i>dbt CI/CD</i></h3>
+&nbsp;
+
+<p>
+    <img src="/images/dbt build production.png"/>
+</p>
+
+<h3 align="center"><i>GitHub Actions CI/CD</i></h3>
+&nbsp;
+
+<p>
+    <img src="/images/CICD Github.png"/>
+</p>
+
+## Project Set Up
+
+The Python version used for this project is Python 3.9.
+
+1. Clone the repo (or download it as zip):
+
+   ```bash
+   git clone https://github.com/benitomartin/de-ch-weather.git
+   ```
+
+2. Create the virtual environment named `main-env` using Conda with Python version 3.9:
+
+   ```bash
+   conda create -n main-env python=3.10
+   conda activate main-env
+   ```
+
+3. Execute the `requirements.txt` script and install the project dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+
+    or
+
+    make install
+    ```
+
+4. Install terraform:
+
+   ```bash
+    conda install -c conda-forge terraform
+    ```
+
+Each project folder contains a **README.md** file with instructions about how to run the code. I highly recommend creating a virtual environment for each one. Additionally, please note that a **GCP Account**, credentials, and proper **IAM** roles are necessary for the scripts to function correctly. The following IAM Roles have been used for this project:
+
+* BigQuery Admin
+* BigQuery Data Editor
+* BigQuery Job User
+* BigQuery User
+* Dataproc Administrator
+* Storage Admin
+* Storage Object Admin
+* Storage Object Creator
+* Storage Object Viewer
+* Viewer
+
 <p align="center">
     <img src="/images/aqitoday.png"/>
 </p>
