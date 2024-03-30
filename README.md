@@ -1,7 +1,7 @@
 # Swiss Air Quality Index
 
 <p align="center">
-<img align="center" src="/images/airquality.png" height="500">
+<img align="center" src="/images/aqitoday.png" height="500">
 </p>
 
 This project has been developed as part of the [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) course provided by [DataTalks.Club](https://datatalks.club/). The data used has been extracted from the [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality).
