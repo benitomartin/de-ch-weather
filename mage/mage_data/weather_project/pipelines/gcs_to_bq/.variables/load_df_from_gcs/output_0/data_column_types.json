@@ -1,1 +1,1 @@
-{"City": "str", "Lat": "float64", "Lon": "float64", "Category": "str", "AQI": "int64", "CO_concentration": "float64", "NO2_concentration": "float64", "O3_concentration": "float64", "PM10_concentration": "float64", "PM25_concentration": "float64", "SO2_concentration": "float64", "Day": "datetime64[ns]", "Time": "time"}
+{}

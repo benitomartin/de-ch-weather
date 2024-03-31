@@ -1,5 +1,6 @@
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
+import os
 from mage_ai.io.google_cloud_storage import GoogleCloudStorage
 from os import path
 if 'data_loader' not in globals():
@@ -7,6 +8,9 @@ if 'data_loader' not in globals():
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 @data_loader
 def load_from_google_cloud_storage(*args, **kwargs):
@@ -26,7 +30,9 @@ def load_from_google_cloud_storage(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'mage-zoomcamp-ben'
+    GCS_BUCKET = os.environ["GCS_BUCKET"]  
+
+    bucket_name = GCS_BUCKET
     object_key = f'{now_fpath}/daily_weather.parquet'
 
     return GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).load(
