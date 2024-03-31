@@ -149,6 +149,8 @@ Each project folder contains a **README.md** file with instructions about how to
 * Storage Admin
 * Compute Admin
 
+To run the project, first go to the Terraform folder to create the infrastucture, then to Mage to get the data and store them in the GCS Bucket and Big Query and finally to dbt, to transform the data.
+
 ## Evaluation Criteria
 
 The following criteria for the evaluation have been fulfilled:
