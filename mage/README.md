@@ -2,7 +2,7 @@
 
 ## Set Up
 
-A GCS Bucket and BQ Dataset must be available in GCS to run this code. Make sure to change this in the mage pipelines python files with your infrastructure names. Additionally a `.env` file must be created with the following parameters and saved in the folder `mage` (the Weather API key can be obtained for free from the [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality)):
+A GCS Bucket and BQ Dataset must be available in GCS to run this code. Make sure to change this in the mage pipelines files with your infrastructure names. Additionally a `.env` file must be created with the following parameters and saved in the folder `mage` (the Weather API key can be obtained for free from the [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality)):
 
 ```bash
 PROJECT_NAME=weather_project
