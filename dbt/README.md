@@ -41,7 +41,7 @@ By default, dbt creates a Development environment. Therefore, here it is shown h
 
 - By default the generated table will have all rows. But you can uncomment the last five lines of code to get a desired amount of rows. If you do so, you can run the following code to get all rows with the uncommented lines:
 
-        dbt run --models stg_all_cities --vars '{"is_test_run": false}'
+        dbt run --select stg_all_cities --vars '{"is_test_run": false}'
 
 - To run the tests included in the `schema.yml` file run:
 
