@@ -8,7 +8,7 @@ The `variables.tf` file contains the following variable that must be defined to 
 - project = "your-project-id""
 - gcs_bucket_name = "your-bucket-name"
 - bq_dataset_name = "your-bq-dataset"
-- lcoation = "your-bucket-location"
+- location = "your-bucket-location"
 - region = "your-bucket-region"
 - gcs_storage_class = "your-storage-class"
 
