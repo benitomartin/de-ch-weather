@@ -150,15 +150,3 @@ Each project folder contains a **README.md** file with instructions about how to
 * Compute Admin
 
 To run the project, first go to the Terraform folder to create the infrastucture, then to Mage to get the data and store them in the GCS Bucket and Big Query and finally to dbt, to transform the data.
-
-## Evaluation Criteria
-
-The following criteria for the evaluation have been fulfilled:
-
-- :white_check_mark: **Problem description**: The project is well described and it's clear and understandable
-- :white_check_mark: **Cloud**: The project is developed on the cloud (Google) and IaC tools (Terraform) are used for provisioning the infrastructure
-- :white_check_mark: **Data Ingestion**: Fully deployed workflow orchestration using Mage
-- :white_check_mark: **Data warehouse**: Tables are created in BigQuery
-- :white_check_mark: **Transformations**: Tables are transformed using dbt
-- :white_check_mark: **Dashboard**: 3 Pages with 6 visualizations using Looker
-- :white_check_mark: **Reproducibility**: Instructions are clear, it's easy to run the code, and it works. 
