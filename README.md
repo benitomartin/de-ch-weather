@@ -4,9 +4,9 @@
 <img align="center" src="/images/aqitoday.png">
 </p>
 
-This project has been developed as part of the [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) course provided by [DataTalks.Club](https://datatalks.club/). The data used has been extracted from the [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality).
+Below, you can find the project descrition to understand the content and setup instructions. The data used has been extracted from the [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality).
 
-Below, you can find the project descrition to understand the content and setup instructions. Feel free to ⭐ and clone this repo 😉
+Feel free to ⭐ and clone this repo 😉
 
 ## Tech Stack
 
